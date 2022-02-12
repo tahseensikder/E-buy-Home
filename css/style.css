@@ -83,6 +83,17 @@ body {
     background-color: var(--hover_clr);
     border-color: var(--hover_clr);
 }
+.preloader{
+    height: 100%;
+    width: 100%;
+    background-color: #ecf0f1;
+    position:fixed;
+    z-index: 9999999;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 /* Common Css Ends */
 
 /* Header starts here */
@@ -802,23 +813,6 @@ nav .nav-search ul li:hover a {
     width: 48%;
     text-align: right;
 }
-/* .arrow-btn {
-    width: 100%;
-    text-align: center;
-    padding: 40px 0;
-}
-.arrow-btn a {
-    margin: 0 5px;
-    padding: 4px 12px;
-    font-size: 24px;
-    border: 1px solid var(--txt_clr);
-    color: var(--txt_clr);
-    transition: all linear 0.5s;
-}
-.arrow-btn a:hover {
-    background-color: var(--hover_clr);
-    border-color: var(--hover_clr);
-} */
 /* Testimonial ends here */
 /* Blog starts here */
 #blog .row {
@@ -1092,3 +1086,18 @@ footer .row {
     margin-top: 10px;
 }
 /* Footer bottom ends */
+/* BackToTop */
+#backToTop {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background-color:var(--hover_clr);
+    color: var(--txt_clr);
+    right: 20px;
+    bottom: 30px;
+    border: none;
+    font-size: 26px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: none;
+}
