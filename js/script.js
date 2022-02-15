@@ -24,5 +24,14 @@ $( function(){
         },1000)
        }
    })
+   //Fixed Nav Bar
+   $(window).on('scroll',function(){
+    if ($(window).scrollTop()>$('#nav_bar').height()){
+        $('#nav_bar').addClass('menu_animate')
+    }
+    else {
+        $('#nav_bar').removeClass('menu_animate')
+    }
+   })
 
 })

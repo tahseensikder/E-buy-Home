@@ -167,10 +167,26 @@ header {
 nav { 
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    position: sticky;
-    z-index: 10;
-    top: 0;
+    /* position: sticky;
+    z-index: 999;
+    top: 0; */
     background-color:var(--txt_clr);
+}
+.menu_animate {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    animation: smooth 0.5s;
+}
+@keyframes smooth {
+    0%{
+        top: -50px;
+    }
+    100%{
+        top: 0;
+    }
 }
 nav .nav-logo,nav .nav-menu,
 nav .nav-search {
