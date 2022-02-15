@@ -269,16 +269,15 @@ nav .nav-search ul li:hover a {
 }
 /* Nav Ends here */
 /* Banner Starts here */
-#banner {
-    background-image: url(../image/banner.jpg);
+#banner .slider_item{
     height: 470px;
     width: 100%;
-    background-position: center;
-    background-size: cover;
+    background-position: center !important;
+    background-size: cover !important;
     position: relative;
     z-index: 1;
 }
-#banner::after{
+#banner .slider_item::after{
     content: '';
     position: absolute;
     top: 0;
@@ -288,8 +287,39 @@ nav .nav-search ul li:hover a {
     background-color: var(--banner_overlay);
     z-index: -1;
 }
+#banner .slider_icon {
+   height: 46px;
+   width: 46px;
+   color: var(--banner_txt-clr);
+   background: none;
+   text-align: center;
+   line-height: 46px;
+   position: absolute;
+   bottom: 10px;
+   right: calc(50% - 23px);
+   z-index: 99;
+   margin-right: 10px;
+   font-size: 24px;
+   border: 1px solid var(--txt_clr);
+   transition: all linear 0.5s;
+   cursor: pointer;
+   opacity: 0;
+   visibility: hidden;
+}
+#banner:hover .slider_icon {
+   opacity: 1;
+   visibility: visible;
+}
+#banner .slider_icon.fa-angle-right {
+    left: calc(50% + 23px);
+    right: auto;
+}
+#banner .slider_icon:hover {
+    background-color: var(--hover_clr);
+    border-color: var(--hover_clr);
+}
 .banner-content {
-    margin-top: 60px;
+    margin-top: 0;
 }
 #banner .container, #banner .row {
     justify-content: left;

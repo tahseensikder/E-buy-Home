@@ -34,4 +34,8 @@ $( function(){
     }
    })
 
+   $('.banner_slider').slick({
+       prevArrow:'<i class="slider_icon fas fa-angle-left"></i>',
+       nextArrow:'<i class="slider_icon fas fa-angle-right"></i>'
+   })
 })
